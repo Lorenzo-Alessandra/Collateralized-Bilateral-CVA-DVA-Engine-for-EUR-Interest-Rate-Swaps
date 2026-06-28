@@ -413,7 +413,7 @@ $$
 
 The expected negative exposure is larger than the expected positive exposure under the simulated dynamics. This later explains why DVA is larger than CVA in the base case.
 
-## Suggested Plot: Exposure Profile
+## Plot: Exposure Profile
 
 Recommended figure:
 
@@ -525,13 +525,19 @@ Result:
 
 This confirms that remaining exposure under the base collateral agreement is caused by collateral frictions rather than a coding error.
 
-## Suggested Plot: Collateral Impact
+## Plot: Collateral Impact
 
-Recommended figures:
+figures:
 
 1. Uncollateralized EE vs collateralized EE.
+   <img width="990" height="490" alt="image" src="https://github.com/user-attachments/assets/d90f1556-bbfc-4ae1-a993-8873910b8e3b" />
+
 2. Uncollateralized ENE vs collateralized ENE.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/a06661e4-364c-4af3-8927-6bdf61dbf60e" />
+
 3. Uncollateralized PFE vs collateralized PFE.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/aa26c29b-8e41-4430-9197-854c746ef003" />
+
 
 Commentary:
 
@@ -654,12 +660,16 @@ Sanity checks:
 | Minimum marginal PD | 0.0000000000 |
 | Maximum marginal PD | 0.0000766323 |
 
-## Suggested Plot: Survival and Default Probability Curves
+##  Plot: Survival and Default Probability Curves
 
-Recommended figures:
+figures:
 
 1. Counterparty and self survival probabilities.
-2. Counterparty and self cumulative default probabilities.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/e25f3834-cd29-41e3-8c06-9f8f13da798c" />
+
+3. Counterparty and self cumulative default probabilities.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/1fcff6ee-18b1-4985-b782-879f4d31975d" />
+
 
 Commentary:
 
@@ -837,9 +847,10 @@ $$
 -CVA + DVA > 0.
 $$
 
-## Suggested Plot: Cumulative CVA and DVA
+## Plot: Cumulative CVA and DVA
 
-Recommended figure:
+figure:
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/136657aa-2989-4188-8522-0ae2905361e2" />
 
 - x-axis: time in years,
 - y-axis: cumulative value adjustment,
@@ -912,14 +923,19 @@ Collateral stress increases both CVA and DVA because worse collateral terms incr
 
 Some cross-effects appear because of the first-to-default adjustment. Counterparty stress lowers counterparty survival probabilities, which can reduce DVA because DVA requires the counterparty to survive until the bank defaults. Self stress lowers bank survival probabilities, which can reduce CVA because CVA requires the bank to survive until the counterparty defaults.
 
-## Suggested Plots: Stress Scenarios
+## Plots: Stress Scenarios
 
 Recommended figures:
 
 1. CVA by scenario.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/64f7d2ea-1591-42a9-bead-4d3e290717fb" />
+
 2. DVA by scenario.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/2d7f7e6e-3904-4e90-bf06-0d7ff5a8dfb7" />
+
 3. Adjusted value by scenario.
-4. Delta CVA and delta DVA relative to base.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/57e5cfa6-636b-452d-92de-115e4955b5f5" />
+
 
 Commentary:
 
@@ -1049,9 +1065,10 @@ $$
 
 Positive correlations increase CVA relative to the zero-correlation stochastic baseline. Negative correlations reduce CVA. Therefore, in this swap setup, positive rate-credit correlation produces wrong-way risk and negative correlation produces right-way risk.
 
-## Suggested Plot: WWR Correlation Sensitivity
+## Plot: WWR Correlation Sensitivity
 
-Recommended figure:
+figure:
+<img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/c17b56dc-372e-4364-a52f-859f449ce5a6" />
 
 - x-axis: correlation $\rho$,
 - y-axis: WWR CVA,
@@ -1170,14 +1187,22 @@ These spikes align with the swap cashflow schedule. They occur because the remai
 
 EVT is fitted independently at each time point, so it preserves these exposure discontinuities rather than smoothing them away.
 
-## Suggested Plots: EVT
+## Plots: EVT
 
 Recommended figures:
 
 1. Empirical vs EVT PFE at 99.5%.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/cd034c2c-def1-47e0-bb9f-8a2146ca5609" />
+
 2. Empirical vs EVT PFE at 99.9%.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/11865080-e3df-45ca-ae2c-8d846043b2a0" />
+
 3. GPD shape parameter over time.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/c51ae96c-9cdc-499c-9127-484aa567c914" />
+
 4. Empirical vs EVT 99.9% PFE with vertical payment-date markers.
+   <img width="989" height="490" alt="image" src="https://github.com/user-attachments/assets/a1979878-39b4-405f-8504-af8b47e6b090" />
+
 
 Commentary:
 
